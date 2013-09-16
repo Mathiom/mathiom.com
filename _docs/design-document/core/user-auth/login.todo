@@ -1,0 +1,22 @@
+Setup:
+    ☐ Setup defaults
+    ☐ Remove default views
+
+Form:
+    ☐ Email
+    ☐ Password
+    ☐ Login Button
+
+Routes:
+    ☐ Home
+    ☐ Dashboard
+
+Messages:
+    ☐ Error
+
+Login:
+    ☐ Validation
+        ☐ Email
+        ☐ Password
+    ☐ Success
+        ☐ Redirect to dashboard
