@@ -8,9 +8,10 @@ Routes:
     ✔ Dashboard @done (13-09-15 21:24)
 
 Form:
-    ☐ Email
-    ☐ Password
-    ☐ Login Button
+    ✔ Email @done (13-09-15 21:43)
+    ✔ Password @done (13-09-15 21:43)
+    ✔ Login Button @done (13-09-15 21:52)
+    ✔ Model Binding @done (13-09-15 21:52)
 
 
 Messages:
