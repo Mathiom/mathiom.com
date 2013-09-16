@@ -6,5 +6,4 @@ class DashboardController extends BaseController {
 	{
 		return View::make('dashboard.index');
 	}
-
 }
