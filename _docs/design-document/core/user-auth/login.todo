@@ -1,15 +1,17 @@
 Setup:
-    ☐ Setup defaults
-    ☐ Remove default views
+    ✔ Setup defaults @done (13-09-15 20:59)
+    ✔ Remove default views @done (13-09-15 21:09)
+
+Routes:
+    ✔ Home @done (13-09-15 21:10)
+        ✔ View @done (13-09-15 21:19)
+    ✔ Dashboard @done (13-09-15 21:24)
 
 Form:
     ☐ Email
     ☐ Password
     ☐ Login Button
 
-Routes:
-    ☐ Home
-    ☐ Dashboard
 
 Messages:
     ☐ Error
