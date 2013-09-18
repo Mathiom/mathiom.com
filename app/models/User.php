@@ -8,6 +8,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	protected $table 	= 'users';
 	protected $hidden 	= ['password'];
 	protected $fillable = ['email', 'password'];
+	protected $guarded 	= ['id', 'confirmation', 'confirmation_timestamp'];
 
 
 
@@ -20,6 +21,24 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	{
 		$creds = $creds ?: Input::only('email', 'password');
 		return Auth::attempt($creds);
+	}
+
+
+	/**
+	 * Attempts to register using VALIDATED data
+	 * @param  [ARR] $creds Validated credentials [email, password]
+	 * @return [OBJ]        NULL if failed, the user object if passed
+	 */
+	static function register($creds = null)
+	{
+		$creds = $creds ?: Input::only('email', 'password');
+		$creds['password'] = Hash::make($creds['password']);
+
+		$user = new User($creds);
+		$user->save();
+		Auth::login($user);
+		
+		return $user;
 	}
 
 

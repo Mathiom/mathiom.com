@@ -1,21 +1,21 @@
 Routes:
-    ☐ Welcome
-    ☐ Activation
+    ✔ Welcome @done (13-09-18 11:37)
+    ✔ Confirmation @done (13-09-18 11:37)
 
 Form:
-    ☐ Register button
+    ✔ Register button @done (13-09-18 11:38)
 
 Register:
-    ☐ Validation
-        ☐ Email
-        ☐ Password
-        ☐ User doesn't exist
-    ☐ Create User
-    ☐ Success
-        ☐ Redirect to welcome screen
+    ✔ Validation @done (13-09-18 11:54)
+        ✔ Email @done (13-09-18 11:54)
+        ✔ Password @done (13-09-18 11:54)
+        ✔ User doesn't exist @done (13-09-18 11:54)
+    ✔ Create User @done (13-09-18 12:34)
+    ✔ Success @done (13-09-18 12:37)
+        ✔ Redirect to welcome screen @done (13-09-18 12:37)
         ☐ Send activation email
-        ☐ Auto-login
-    ☐ Failed
+        ✔ Auto-login @done (13-09-18 12:38)
+    ✔ Failed @done (13-09-18 12:37)
 
 Activation:
     ☐ Welcome email with activation code

@@ -16,6 +16,6 @@ created_at              //Timestamp of creation date
 ```
 
 #### confirmation
-      0     => confirmed
+      0     => not confirmed
     > 0     => # of confirmation attempts
-     -1     => not confirmed
+     -1     => confirmed

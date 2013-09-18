@@ -1,7 +1,7 @@
-<?php //#########################################
-// Home Controller
-//###############################################
-
+<?php 
+/**
+ * Handles the homepage and login and registration process
+ */
 class HomeController extends BaseController
 {
     protected $layout = 'layouts.page';
@@ -28,15 +28,25 @@ class HomeController extends BaseController
 
 
         //- - - - - - - - - - - - - - - - - - - - - - - -
-        // Authenticate
+        // Login
         //- - - - - - - - - - - - - - - - - - - - - - - -
         if(Input::get('action') == 'Login'){
             if(!User::login())
                 return $this->failed(['login'=>'User/Password combination does not exist']);
             else
                 return Redirect::route('dashboard');
+        //- - - - - - - - - - - - - - - - - - - - - - - -
+        // Register
+        //- - - - - - - - - - - - - - - - - - - - - - - -
         } else {
-            return 'Registering';
+            if(User::whereEmail(Input::get('email'))->first()){
+                return $this->failed(['register'=>'This email is already registered, please click login instead.']);
+            }
+            else
+                if(!User::register())
+                    return $this->failed(['register'=>'Oops! Something went wrong, please try again!']);
+                else
+                    return Redirect::route('welcome');
         }
     }
 }

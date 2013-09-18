@@ -10,7 +10,8 @@
                     {{Form::label('password', 'Password:')}}
                     {{Form::password('password')}}
                 <li>
-                    {{Form::submit('Login', ['name'=>'action'])}}
+                    {{Form::submit('Register',  ['name'=>'action'])}}
+                    {{Form::submit('Login',     ['name'=>'action'])}}
             </ul>
         {{Form::close()}}
 

@@ -13,13 +13,14 @@ class CreateUsersTable extends Migration {
 	public function up()
 	{
 		Schema::create('users', function(Blueprint $table) {
-			$table->increments('id')->primary();
+			$table->integer('id', true);
 			$table->string('email', 48);
 			$table->string('password', 60);
-			$table->smallInteger('confirmation');
+			$table->smallInteger('confirmation')->default(0);
 			$table->timestamp('confirmation_timestamp');
 			$table->timestamps();
 		});
+		DB::statement("ALTER TABLE ".DB::getTablePrefix()."users CHANGE confirmation_timestamp confirmation_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL");
 	}
 
 

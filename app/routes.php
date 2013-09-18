@@ -4,6 +4,16 @@ Route::controller('me', 'DashboardController', ['getIndex'=>'dashboard']);
 
 
 //===============================================
+// Welcome & Confirmation
+//===============================================
+Route::get('welcome', ['as'=>'welcome', function(){return View::make('pages.welcome');}]);
+Route::controller('confirm', 'ConfirmationController', [
+    'getIndex'  => 'confirmation-message',
+    'postIndex' => 'confirmation-attempt'
+]);
+
+
+//===============================================
 // Home, Login, Logout
 //===============================================
 Route::get('logout', ['as'=>'logout', function(){

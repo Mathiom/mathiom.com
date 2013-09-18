@@ -26,6 +26,7 @@ Each list is limited a depth of two, representing:
     * ☆ Account cancellation
 * ☆ Pages
     * ☆ Home
+    * ☆ Welcome
     * ☆ Dashboard
     * ☆ Confirmation Screen
     * ☆ Contact

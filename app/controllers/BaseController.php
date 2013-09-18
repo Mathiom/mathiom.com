@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Our Abstract Base controller
+ */
 class BaseController extends Controller {
 
 	/**
