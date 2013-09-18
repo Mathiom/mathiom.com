@@ -25,3 +25,10 @@ Login:
     ✔ Success @done (13-09-17 21:27)
         ✔ Redirect to dashboard @done (13-09-17 21:27)
     ✔ Failed @done (13-09-17 21:27)
+
+Logout:
+    ✔ Show userbar on login @done (13-09-17 22:31)
+    ☐ Hide form
+    ✔ Show logout button @done (13-09-17 22:31)
+    ✔ Logout @done (13-09-17 22:31)
+        ✔ Redirect to home @done (13-09-17 22:31)

@@ -1,0 +1,24 @@
+Routes:
+    ☐ Welcome
+    ☐ Activation
+
+Form:
+    ☐ Register button
+
+Register:
+    ☐ Validation
+        ☐ Email
+        ☐ Password
+        ☐ User doesn't exist
+    ☐ Create User
+    ☐ Success
+        ☐ Redirect to welcome screen
+        ☐ Send activation email
+        ☐ Auto-login
+    ☐ Failed
+
+Activation:
+    ☐ Welcome email with activation code
+    ☐ Lock out after 3 failed attempts
+    ☐ Remove if not activated after 1 month
+    ☐ Resend activation

@@ -4,12 +4,14 @@
 
 class HomeController extends BaseController
 {
+    protected $layout = 'layouts.page';
+
     /**
      * Default home screen
      */
     public function getIndex()
     {
-        return View::make('pages.home');
+        $this->layout->content = View::make('pages.home');
     }
 
     /**

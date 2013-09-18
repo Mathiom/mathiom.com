@@ -22,8 +22,6 @@ class BaseController extends Controller {
      */
     protected function failed($errorMsg = [])
     {
-        if(is_array($errorMsg)) $errorMsg = new \Illuminate\Support\MessageBag($errorMsg);
-
         return Redirect::back()
             ->withInput(Input::except('password'))
             ->withErrors($errorMsg);

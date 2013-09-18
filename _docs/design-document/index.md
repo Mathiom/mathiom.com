@@ -16,10 +16,8 @@ Each list is limited a depth of two, representing:
 ### The Core
 * ☆ User authentication
     * ★ [Database](database.md)
-    * ☆ [Login/Register Form](core/user-auth/login.todo)
-    * ☆ Sign in
-    * ☆ Sign out
-    * ☆ Register
+    * ★ [Login/Out](core/user-auth/login.todo)
+    * ☆ [Register Form](core/user-auth/register.todo)
     * ☆ Account confirmation
     * ☆ Resend confirmation
     * ☆ Reset password

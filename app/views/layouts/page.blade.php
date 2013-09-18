@@ -9,6 +9,9 @@
     <link rel="shortcut icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
 </head>
 <body>
+    @include('layouts.parts.userbar')
+    @include('layouts.parts.messages.header')
+
     @yield('content')
 </body>
 </html>
