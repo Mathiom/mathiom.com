@@ -22,10 +22,19 @@ class HomeController extends BaseController
         //- - - - - - - - - - - - - - - - - - - - - - - -
         $valid = new Services\Validators\Login();
         if(!$valid->passes())
-            return Redirect::back()
-                ->withInput(Input::except('password'))
-                ->withErrors($valid->errors);
+            return $this->failed($valid->errors);
 
-        return 'SUCCESS';
+
+        //- - - - - - - - - - - - - - - - - - - - - - - -
+        // Authenticate
+        //- - - - - - - - - - - - - - - - - - - - - - - -
+        if(Input::get('action') == 'Login'){
+            if(!User::login())
+                return $this->failed(['login'=>'User/Password combination does not exist']);
+            else
+                return Redirect::route('dashboard');
+        } else {
+            return 'Registering';
+        }
     }
 }

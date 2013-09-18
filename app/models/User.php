@@ -12,6 +12,18 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
 
 	/**
+	 * Attempts to log the user in using VALIDATED data
+	 * @param  [ARR] $creds	Credentials [email, password]
+	 * @return [OBJ]       	NULL if failed, the user object if passed
+	 */
+	static function login($creds = null)
+	{
+		$creds = $creds ?: Input::only('email', 'password');
+		return Auth::attempt($creds);
+	}
+
+
+	/**
 	 * Get the unique identifier for the user.
 	 *
 	 * @return mixed
@@ -40,5 +52,4 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	{
 		return $this->email;
 	}
-
 }

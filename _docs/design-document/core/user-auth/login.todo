@@ -18,8 +18,10 @@ Messages:
     ✔ Error @done (13-09-16 02:25)
 
 Login:
-    ✔ Validation @done (13-09-16 02:25)
-        ☐ Email
-        ☐ Password
-    ☐ Success
-        ☐ Redirect to dashboard
+    ✔ Validation @done (13-09-17 21:23)
+        ✔ Email @done (13-09-17 21:23)
+        ✔ Password @done (13-09-17 21:23)
+    ✔ Authentication @done (13-09-17 21:23)
+    ✔ Success @done (13-09-17 21:27)
+        ✔ Redirect to dashboard @done (13-09-17 21:27)
+    ✔ Failed @done (13-09-17 21:27)
